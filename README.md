@@ -34,8 +34,6 @@ huggingface-cli download Linwei-Chen/UniDerm-model --local-dir UniDerm-model
 huggingface-cli download Linwei-Chen/UniDerm-data  --repo-type dataset --local-dir UniDerm-data
 ```
 
-(Equivalently, clone any of them, e.g. `git clone https://user:<ACCESS_TOKEN_FROM_PAPER>@huggingface.co/Linwei-Chen/UniDerm-code`.)
-
 ## What you can do in the demo
 
 - **Diagnose** — upload a skin photo and get a zero-shot ranked differential over four
