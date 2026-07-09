@@ -17,32 +17,24 @@ so a single model can handle several clinical tasks with **no task-specific retr
 
 ## For reviewers — accessing the code, model & data
 
-The **access token** is provided in the paper. Use it to obtain the (gated) resources:
+All three are **gated Hugging Face repositories**. The **access token** is provided in the
+paper. With that token:
 
 | Resource | Location |
 |---|---|
-| Code | https://github.com/Linwei-Chen/UniDerm |
+| Code | https://huggingface.co/Linwei-Chen/UniDerm-code |
 | Model | https://huggingface.co/Linwei-Chen/UniDerm-model |
 | Dataset | https://huggingface.co/datasets/Linwei-Chen/UniDerm-data |
-
-**Hugging Face (model & dataset)** — with the token from the paper:
 
 ```bash
 pip install -U huggingface_hub
 export HF_TOKEN=<ACCESS_TOKEN_FROM_PAPER>
-# model
+huggingface-cli download Linwei-Chen/UniDerm-code  --local-dir UniDerm-code
 huggingface-cli download Linwei-Chen/UniDerm-model --local-dir UniDerm-model
-# dataset
-huggingface-cli download Linwei-Chen/UniDerm-data --repo-type dataset --local-dir UniDerm-data
+huggingface-cli download Linwei-Chen/UniDerm-data  --repo-type dataset --local-dir UniDerm-data
 ```
 
-(Equivalently: `git clone https://user:<ACCESS_TOKEN_FROM_PAPER>@huggingface.co/Linwei-Chen/UniDerm-model`.)
-
-**Code (GitHub)** — with the token from the paper:
-
-```bash
-git clone https://<ACCESS_TOKEN_FROM_PAPER>@github.com/Linwei-Chen/UniDerm.git
-```
+(Equivalently, clone any of them, e.g. `git clone https://user:<ACCESS_TOKEN_FROM_PAPER>@huggingface.co/Linwei-Chen/UniDerm-code`.)
 
 ## What you can do in the demo
 
