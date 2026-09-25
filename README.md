@@ -8,12 +8,13 @@ so a single model can handle several clinical tasks with **no task-specific retr
 
 ## 🔗 Try the live demo
 
-### → [Demo](https://thursday-influences-others-thinking.trycloudflare.com)
+### → https://thursday-influences-others-thinking.trycloudflare.com
 
 > ⚠️ **Research demonstration only — not a medical device, not for clinical use.** Uploaded
 > images are processed in memory and discarded; nothing is stored.
 >
 > The link is a temporary preview and may change if the demo is restarted.
+> Contact chenlinwei.ai@gmail.com if it fails.
 
 ## For reviewers — accessing the code, model & data
 
